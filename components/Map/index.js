@@ -3,6 +3,7 @@ import styled from "styled-components";
 import "leaflet/dist/leaflet.css";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import "leaflet-defaulticon-compatibility";
+import LocationMarker from "./LocationMarker";
 
 const StyledMapContainer = styled(MapContainer)`
   height: 30rem;
@@ -27,6 +28,7 @@ export default function Map({ markers }) {
           </Marker>
         );
       })}
+      <LocationMarker />
     </StyledMapContainer>
   );
 }
